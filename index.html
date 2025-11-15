@@ -1,51 +1,98 @@
-import React from "react";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Spicy Sprout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: #ffffff;
+            color: #000;
+            text-align: center;
+        }
+        .section {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            text-align: left;
+        }
+        .blue { background: #dbeafe; }
+        .green { background: #ecfdf5; }
+        .light-green { background: #d1fae5; }
+        .red { background: #fee2e2; }
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 12px;
+            font-weight: 800;
+        }
+        p {
+            font-size: 1.15rem;
+            line-height: 1.6;
+        }
+        .salsa-img {
+            width: 260px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transform: rotate(3deg);
+            margin-top: 30px;
+        }
+        footer {
+            margin-top: 60px;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
 
-export default function QuickSite() {
-  return (
-    <div className="min-h-screen bg-white text-black flex flex-col items-center p-10 space-y-12">
-      <header className="text-center space-y-2 relative">
-        
-        <h1 className="text-6xl font-extrabold">The Spicy Sprout</h1>
-        <p className="text-lg">Passionately Homegrown 🏡 • Extremely Fresh🌿 • Completely Delicious 🥗</p>
-      </header>
-      <section className="max-w-2xl bg-blue-100 rounded-2xl p-8 shadow">
-        <h2 className="text-3xl font-bold mb-3">About Me</h2>
-        <p className="text-lg leading-relaxed">
-          Hi my name is Axel Kreusel — I've been gardening for 4 years and I am happy to say that I started The Spicy Sprout as a pretty big side hustle. I'm still in school but I sell what I grow to share what I love! -Axel Kreusel
+    <h1>The Spicy Sprout</h1>
+    <p>Passionately Homegrown 🏡 • Extremely Fresh🌿 • Completely Delicious 🥗</p>
+
+    <div class="section blue">
+        <h2>About Me</h2>
+        <p>
+            Hi my name is Axel Kreusel — I've been gardening for 4 years and I am happy to say that I started The Spicy Sprout as a pretty big side hustle. I'm still in school but I sell what I grow to share what I love! -Axel Kreusel
         </p>
-      </section>
-
-      <section className="max-w-2xl bg-green-50 rounded-2xl p-8 shadow">
-        <h2 className="text-3xl font-bold mb-3">About the Garden</h2>
-        <p className="text-lg leading-relaxed">
-          I started gardening right here in Mueller quite a while back — and yes that DOES mean that I have a very small space, but I love the garden that I've made. All the beds were DIY-ed with a manual saw and a pair of hands. I try to use vertical growing as an advantage to the small yard space. I always work hard every day to make the most local and fresh salsa in Texas! -also Axel Kreusel
-        </p>
-      </section>
-
-            <section className="max-w-2xl bg-red-100 rounded-2xl p-8 shadow">
-        <h2 className="text-3xl font-bold mb-3">The Spicy Sprout's Salsa</h2>
-        <p className="text-lg leading-relaxed">
-          I make my salsa from scratch everyday, making sure that everything is fresh and tasty. At The Spicy Sprout its not just salsa, its pure flavor and freshness packed into a jar, no junk, no preservatives, no store-bought anything. We bring Local to a whole new level. from one Texan to another –Axel Kreusel
-
-<br /><br />
-Small batch. Big flavor. Dangerously delicious.
-   </p>
-      </section>
-      <img
-        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAuYAAAIkCAYAAABSue7sAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAAB"
-        alt="salsa bowl"
-        className="w-72 rounded-2xl shadow-xl mt-6 rotate-3" />
-       
-      <section className="max-w-2xl bg-green-100 rounded-2xl p-8 shadow">
-    <h2 className="text-3xl font-bold mb-3">The nursery</h2>
-    <p className="text-lg leading-relaxed">
-      Over the winter I propogate nice and leafy figs, they are easy to grow and a great pick if you need something you don't need to water to much. 😅 I will also sell various sprouts such as cucumbers, tomatoes, and watermelons. Wishing you the best luck in the garden –Axel Kreusel
-    </p>
-  </section>
-
-  <footer className="text-center pt-10 text-sm opacity-70">
-    © {new Date().getFullYear()} The Spicy Sprout — Growing with style 🌿
-  </footer>
     </div>
-  );
-}
+
+    <div class="section green">
+        <h2>About the Garden</h2>
+        <p>
+            I started gardening right here in Mueller quite a while back — and yes that DOES mean that I have a very small space, but I love the garden that I've made. All the beds were DIY-ed with a manual saw and a pair of hands. I try to use vertical growing as an advantage to the small yard space. I always work hard every day to make the most local and fresh salsa in Texas! -also Axel Kreusel
+        </p>
+    </div>
+
+    <div class="section red">
+        <h2>The Spicy Sprout's Salsa</h2>
+        <p>
+            I make my salsa from scratch everyday, making sure that everything is fresh and tasty. At The Spicy Sprout it's not just salsa, it's pure flavor and freshness packed into a jar — no junk, no preservatives, no store-bought anything. We bring Local to a whole new level. From one Texan to another –Axel Kreusel
+            <br><br>
+            Small batch. Big flavor. Dangerously delicious.
+        </p>
+    </div>
+
+    <img class="salsa-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAuYAAAIkCAYAAABSue7sAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAAB" alt="salsa bowl" />
+
+    <div class="section light-green">
+        <h2>The Nursery</h2>
+        <p>
+            Over the winter I propagate nice and leafy figs. They are easy to grow and a great pick if you need something you don't need to water too much 😅. I also sell various sprouts such as cucumbers, tomatoes, and watermelons. Wishing you the best luck in the garden –Axel Kreusel
+        </p>
+    </div>
+
+    <footer>
+        © 2025 The Spicy Sprout — Growing with style 🌿
+    </footer>
+
+</body>
+</html>
